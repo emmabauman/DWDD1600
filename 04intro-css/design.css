@@ -84,7 +84,7 @@ main dl dt {
 }
 main dl dd {
     color: #1F64BF;
-    font-size= .9rem;
+    font-size: 1rem;
 }
 
 
@@ -104,10 +104,12 @@ main a:hover {
 
 main address {
     font-style: normal;
+    color: #000000;
+    text-align:center;
     background-color: #6A9AD9;
     padding:.5rem;
     width: 12.5rem;
-    border: 1px solid #0442BF;
+    border: 3px solid #0442BF;
     border-radius: .5rem;
 }
 
