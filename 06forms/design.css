@@ -114,10 +114,13 @@ main address {
     border-radius: .5rem;
 }
 
+
+}
 .myForm fieldset {
     border: 1px solid #0442BF;
     border-radius: 3px;
     margin-bottom: 1rem;
+    display: block;
     
 }
 
@@ -129,13 +132,16 @@ main address {
 
 .myForm label {
     margin: .5rem;
-    
 }
 
-.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea {
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email]
+{
     display: block;
-    
 }
+
+
+
+
 
 .myForm [type=submit] {
     background-color: #0442BF;
