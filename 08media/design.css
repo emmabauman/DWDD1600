@@ -1,0 +1,270 @@
+/* prevent problems with different browsers*/
+* {box-sizing:border-box}
+
+
+body {
+   font-family: 'PT Sans', sans-serif;
+    font-size:  16px; 
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Header Stuff Here*/
+ 
+header {
+    background-color: #F2F0EB;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center
+}
+
+header div {
+    padding-left: 3vw;
+}
+header h1 {
+   margin: 0;
+   color: #0433BF;
+    letter-spacing: 4px
+}
+header p {
+   margin: 0;
+   color: #0442BF;
+   letter-spacing: .5px;
+}
+
+/*small screens*/
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display:block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #0442BF;
+    }
+    nav .active a {
+        background-color: #0442BF;
+        color: white;
+        background-image: linear-gradient(#0442BF, #8cb1fa)
+    }
+} /*end of the media query*/
+
+/*BIG SCREENS*/
+@media only screen and (min-width: 601px) {
+ 
+    nav {
+    background-color:#0442BF ;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #F2F0EB;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+        
+}
+nav li.active a {
+
+    background-color:#F2F0EB;
+    color: #0442BF;    
+}
+nav a:hover {
+    color: #fff;
+        
+}
+    
+    
+} /*end of the media query*/
+
+
+
+
+
+
+
+/* stuff for the main */
+
+figure.hero {
+    width: 100%;
+    margin: 0;
+}
+figure.hero img {
+    width: 100%;
+    height: auto;
+}
+main{
+    padding: 1rem 2vw;    
+}
+main h1 {
+   color: #0442BF;
+       font-weight:600;
+    
+}
+main h2 {
+   color: #1F64BF;
+   margin-bottom: .2rem;
+}
+main p { 
+color: #2f3133;
+margin: .0 0 .3rem 0;
+}
+
+
+main ul {
+    list-style-type: circle;   
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem; 
+    
+}
+main dl dt {
+    color: #0433BF;
+    font-weight: 600
+}
+main dl dd {
+    color: #1F64BF;
+    font-size: 1rem;
+}
+
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #F2F0EB;
+}
+
+main a {
+    color: #0442BF;
+    text-decoration: none;
+}
+main a:hover {
+    color:#6A9AD9;
+    text-decoration: none;
+}
+
+main address {
+    font-style: normal;
+    color: #000000;
+    text-align:center;
+    background-color: #6A9AD9;
+    padding:.5rem;
+    width: 12.5rem;
+    border: 3px solid #0442BF;
+    border-radius: .5rem;
+}
+
+
+}
+.myForm fieldset {
+    border: 1px solid #0442BF;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    display: block;
+    
+}
+
+.myForm legend {
+    color: #0442BF;
+    font-size: 1rem;
+
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email]
+{
+    display: block;
+}
+
+
+
+
+
+
+.myForm [type=submit] {
+    background-color: #0442BF;
+    color: #F2F0EB;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+.gallery span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    color: #0442BF;
+}
+
+.gallery img {
+   
+}
+
+.gallery img:hover{
+    box-shadow:1px 2px 10px rgba(0, 0, 0, .5);
+}
+
+    
+ main table.our-pricing {
+    width: 100%;
+    border-collapse: collapse;
+}
+ main table.our-pricing th {
+   background-color: #0442BF;
+color: white;
+padding: .5rem 2vw;
+text-align: left;
+}
+ main table.our-pricing td {
+     color: #000080;
+     padding: .4rem 2vw;
+}
+
+main table.our-pricing tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+main table.our-pricing tr:hover {
+    background-color: rgba(173, 216, 230, 0.2);
+}
+
+iframe {
+    margin: 20px 0; /* Adds a top and bottom margin */
+    display: block; /* Ensures the iframe behaves like a block element */
+    max-width: 100%; /* Makes sure the iframe doesn’t exceed the width of its container */
+}
+
+/* Footer Stuff Here */
+footer {
+    background-color:#F2F0EB;
+    text-align: center;
+    color: #0433BF;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a { 
+    color: #0433BF;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
